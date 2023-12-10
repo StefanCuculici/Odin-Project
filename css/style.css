@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header {
+  width: 80%;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: #e7e5e5;
+}
+.container header nav .links {
+  display: flex;
+}
+.container header nav .links a {
+  text-decoration: none;
+  color: #e7e5e5;
+  padding: 0 12px 0 0;
+  font-size: 18px;
+}
+.container header nav .links a :hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+.container header nav #logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+.container header nav #logo :hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.container header article {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 400px;
+}
+.container header article .picture {
+  max-width: 300px;
+  max-height: 150px;
+  margin-right: 0 30px 0 0;
+  border-radius: 20px;
+}
+.container header article .picture img {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.container header article .content {
+  width: 50%;
+}
+.container header article .content #head {
+  color: #e7e5e5;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: bolder;
+}
+.container header article .content #text {
+  font-size: 18px;
+  color: #f9faf8;
+  margin-bottom: 10px;
+}
+.container header article .content button {
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  color: #e7e5e5;
+}
+
+main {
+  background-color: #f9faf8;
+  display: flex;
+  justify-content: center;
+}
+main article {
+  width: 80%;
+  min-height: 600px;
+}
+main article .heading {
+  text-align: center;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+  margin: 30px 0 30px 0;
+}
+main article .box {
+  display: flex;
+  justify-content: space-between;
+}
+main article .box .image-box {
+  max-width: 150px;
+  max-height: 150px;
+}
+main article .box .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+main article .box .image-box p {
+  text-align: center;
+  color: #1f2937;
+}
+
+#another-box {
+  background-color: #e7e5e5;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+#another-box .quote-box {
+  width: 60%;
+  margin: 50px 0 50px 0;
+  font-size: 36px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+#another-box .quote-box #author {
+  padding: 10px;
+  text-align: left;
+}
+
+.product-box {
+  display: flex;
+  justify-content: center;
+  color: #f9faf8;
+}
+.product-box .product {
+  width: 60%;
+  color: #e7e5e5;
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  margin: 50px 0 50px 0;
+  border-radius: 10px;
+}
+.product-box .product .writing {
+  padding: 5px;
+  margin: 0 0 0 10px;
+}
+.product-box .product .writing #main {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.product-box .product button {
+  color: #e7e5e5;
+  margin: 0 20px 0 0;
+  background: transparent;
+  border: 2px solid #e7e5e5;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  height: 100px;
+}
+
+@media (max-width: 700px) {
+  header article {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  header article .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px 0;
+  }
+  header article .picture img {
+    margin: 0;
+  }
+  header article .content button {
+    margin: 0 0 20px 0;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  .box p {
+    margin-top: 15px;
+  }
+  main article {
+    height: 900px;
+  }
+}
